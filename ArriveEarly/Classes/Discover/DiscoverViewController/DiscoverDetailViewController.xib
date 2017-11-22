@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoverDetailViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="oe5-D2-sts" id="nwm-hq-ydU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oe5-D2-sts">
+                    <rect key="frame" x="15" y="50" width="345" height="617"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-KX-g0b">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="OUD-cw-exz"/>
+                        <constraint firstAttribute="width" constant="80" id="kn9-tF-N07"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="发现" image="back">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="ank-RM-2uf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMr-hq-HeD">
+                    <rect key="frame" x="255" y="597" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="5H0-Nx-IBQ"/>
+                        <constraint firstAttribute="height" constant="50" id="JeT-Qw-N3B"/>
+                    </constraints>
+                    <state key="normal" image="eatbtn"/>
+                    <connections>
+                        <action selector="defialAction:" destination="-1" eventType="touchUpInside" id="nSn-NA-H4b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hMr-hq-HeD" secondAttribute="bottom" constant="20" id="4Vg-ZP-uod"/>
+                <constraint firstItem="Qfx-KX-g0b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L4h-ev-5rp"/>
+                <constraint firstItem="oe5-D2-sts" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="PGK-iX-K2q"/>
+                <constraint firstAttribute="trailing" secondItem="hMr-hq-HeD" secondAttribute="trailing" id="PKP-gK-qwh"/>
+                <constraint firstItem="oe5-D2-sts" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="d4E-2j-nus"/>
+                <constraint firstAttribute="trailing" secondItem="oe5-D2-sts" secondAttribute="trailing" constant="15" id="dJf-G2-27N"/>
+                <constraint firstAttribute="bottom" secondItem="oe5-D2-sts" secondAttribute="bottom" id="m03-zJ-UAX"/>
+                <constraint firstItem="Qfx-KX-g0b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rYl-mU-Icf"/>
+            </constraints>
+            <point key="canvasLocation" x="-43" y="-226"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="8" height="14"/>
+        <image name="eatbtn" width="89" height="32"/>
+    </resources>
+</document>

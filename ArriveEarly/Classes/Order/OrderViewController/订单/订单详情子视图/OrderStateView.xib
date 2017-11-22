@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderStateView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="513"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-jU-fjl">
+                    <rect key="frame" x="0.0" y="512.5" width="375" height="0.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jsc-jU-fjl" secondAttribute="height" multiplier="1000" id="jTa-95-wWg"/>
+                    </constraints>
+                    <state key="normal" title="立即支付/再来一单">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="operationButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Rt-sB-4DY"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="roC-dp-wNS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="511.5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jsc-jU-fjl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9v7-nk-AHJ"/>
+                <constraint firstItem="roC-dp-wNS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="E7v-3E-mKY"/>
+                <constraint firstAttribute="bottom" secondItem="jsc-jU-fjl" secondAttribute="bottom" id="eol-md-40Q"/>
+                <constraint firstItem="roC-dp-wNS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fYw-Cc-c9c"/>
+                <constraint firstItem="roC-dp-wNS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gHS-ki-cXo"/>
+                <constraint firstItem="jsc-jU-fjl" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="j8x-Uf-tX7"/>
+                <constraint firstItem="jsc-jU-fjl" firstAttribute="top" secondItem="roC-dp-wNS" secondAttribute="bottom" constant="1" id="mJo-yi-Mp4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="operationButton" destination="jsc-jU-fjl" id="l2A-M2-6HB"/>
+                <outlet property="tableView" destination="roC-dp-wNS" id="BwO-rm-S9X"/>
+            </connections>
+            <point key="canvasLocation" x="16" y="17"/>
+        </view>
+    </objects>
+</document>

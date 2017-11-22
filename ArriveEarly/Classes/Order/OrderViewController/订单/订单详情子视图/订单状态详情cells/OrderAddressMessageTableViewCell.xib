@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="OrderAddressMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efa-Az-Rbj">
+                        <rect key="frame" x="18" y="99.5" width="321" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="d0Z-8z-yFm"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0Y-7U-dcc">
+                        <rect key="frame" x="0.0" y="50" width="339" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WOc-u8-tYT"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配送地址" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvm-7R-jMh">
+                        <rect key="frame" x="18" y="8" width="85" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="H74-8p-e53"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="涂女士 18200516789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-97-arO">
+                        <rect key="frame" x="108" y="8" width="215" height="42"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天府新谷8号楼-易达出行11-25" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0dc-Mq-s9V">
+                        <rect key="frame" x="108" y="51" width="215" height="48.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="efa-Az-Rbj" secondAttribute="bottom" id="6p4-Ax-sJc"/>
+                    <constraint firstAttribute="trailing" secondItem="efa-Az-Rbj" secondAttribute="trailing" id="AUz-qQ-RpK"/>
+                    <constraint firstItem="kvm-7R-jMh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="L9L-f9-iTV"/>
+                    <constraint firstItem="k0Y-7U-dcc" firstAttribute="top" secondItem="9gi-97-arO" secondAttribute="bottom" id="LPf-iF-0wH"/>
+                    <constraint firstItem="k0Y-7U-dcc" firstAttribute="top" secondItem="kvm-7R-jMh" secondAttribute="bottom" id="MbV-PF-7UP"/>
+                    <constraint firstAttribute="trailing" secondItem="k0Y-7U-dcc" secondAttribute="trailing" id="Qhf-8o-9Vq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9gi-97-arO" secondAttribute="trailing" constant="8" id="Qlw-f0-2fj"/>
+                    <constraint firstItem="k0Y-7U-dcc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="T3e-OV-Uxk"/>
+                    <constraint firstItem="9gi-97-arO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="TNo-W5-sda"/>
+                    <constraint firstItem="efa-Az-Rbj" firstAttribute="top" secondItem="0dc-Mq-s9V" secondAttribute="bottom" id="X0r-Ya-2Zv"/>
+                    <constraint firstItem="kvm-7R-jMh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="bVr-TV-e5i"/>
+                    <constraint firstItem="0dc-Mq-s9V" firstAttribute="top" secondItem="k0Y-7U-dcc" secondAttribute="bottom" id="eel-v3-ica"/>
+                    <constraint firstItem="0dc-Mq-s9V" firstAttribute="leading" secondItem="9gi-97-arO" secondAttribute="leading" id="fAc-D8-gch"/>
+                    <constraint firstItem="efa-Az-Rbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="ruo-yp-ckL"/>
+                    <constraint firstItem="k0Y-7U-dcc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sB6-QR-qKN"/>
+                    <constraint firstItem="0dc-Mq-s9V" firstAttribute="width" secondItem="9gi-97-arO" secondAttribute="width" id="tdJ-Vv-Y6X"/>
+                    <constraint firstItem="9gi-97-arO" firstAttribute="leading" secondItem="kvm-7R-jMh" secondAttribute="trailing" constant="5" id="z7m-qP-mvm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label_address" destination="0dc-Mq-s9V" id="nNf-5O-y2f"/>
+                <outlet property="label_name" destination="kvm-7R-jMh" id="ZVy-B6-uQ1"/>
+                <outlet property="lineViewHieght" destination="d0Z-8z-yFm" id="278-VA-kxb"/>
+                <outlet property="userInfo" destination="9gi-97-arO" id="Fz5-ms-8us"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="80.5"/>
+        </tableViewCell>
+    </objects>
+</document>

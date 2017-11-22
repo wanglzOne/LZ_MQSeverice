@@ -1,0 +1,180 @@
+//
+//  AEPublic.pch
+//  ArriveEarly
+//
+//  Created by chenxianwu on 16/9/18.
+//  Copyright © 2016年 YiDaTianCheng. All rights reserved.
+//
+
+//NSDate getTimeToLocaDatewith:
+
+#ifndef AEPublic_h
+#define AEPublic_h
+#import "AEConst.h"
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Availability.h>
+#import "UIBarButtonItem+Extension.h"
+#import "UIView+Extension.h"
+
+#import "UIColor+AEUtil.h"
+#import "UIFont+ETUtil.h"
+#import <Masonry.h>
+#import "UIButton+ETUtil.h"
+#import "PackagMet.h"
+#import <MBProgressHUD.h>
+#import "Foundation+.h"
+#import <UIAlertController+Blocks.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import <MJRefresh.h>
+#import "NormalWebPageViewController.h"
+#import "UIViewController+CustomNavigation.h"
+
+#import "ArriveEaryDefaultConfigManager.h"
+#import "PleaseLogInView.h"
+
+//#import "LoginViewController.h"
+
+#import "PayViewController.h"
+#import "AFBaseNetWork.h"
+#import "EncapsulationAFBaseNet.h"
+
+#import "ModelInfoHeader.h"
+
+
+#import "ArriveEarlyManager.h"
+#import "ShoppingCarManager.h"
+
+//    z
+#import "UIView+CusAlertView.h"
+#import "RSAEncryptor.h"
+
+
+
+
+#import <CoreLocation/CLLocation.h>
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+
+#import <UMSocialCore/UMSocialCore.h>
+#import <UShareUI/UShareUI.h>
+
+#import "NormalAlertView.h"
+
+#define Money(price) [NSString stringWithFormat:@"%@",@([NSString stringWithFormat:@"%.2f",price].floatValue)]
+#define MoneySymbol(price) [NSString stringWithFormat:@"￥%@",@([NSString stringWithFormat:@"%.2f",price].floatValue)]
+/**
+ *  地址
+ */
+
+
+
+/**
+ *  屏幕宽高
+ */
+#define kScreenSize [UIScreen mainScreen].bounds.size
+
+#define KScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+#define UIScreenWidth [UIScreen mainScreen].bounds.size.width
+#define UIScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define KHEIGHT_6(height_6) [UIScreen mainScreen].bounds.size.width*height_6/375.0
+
+/**
+ * NSUserDefaults
+ */
+#define kUserDef [NSUserDefaults standardUserDefaults]
+/**
+ *  搜索历史数据
+ */
+#define HisAry [kUserDef valueForKey:@"HisAry"]
+
+
+// RGB颜色
+#define HWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define HWColorAlp(r, g, b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define CUS_Nav_bgColor [UIColor colorWithRed:0xff/255.0 green:0xd7/255.0 blue:0x05/255.0 alpha:1]
+#define Color_Nolmal_Black [UIColor colorWithRed:0x33/255.0 green:0x33/255.0 blue:0x33/255.0 alpha:1]
+#define Color_Nolmal_666666 [UIColor colorWithRed:0x66/255.0 green:0x66/255.0 blue:0x66/255.0 alpha:1]
+#define Color_Nolmal_999999 [UIColor colorWithRed:0x99/255.0 green:0x99/255.0 blue:0x99/255.0 alpha:1]
+#define Color_Nolmal_e4e5e8 [UIColor colorWithRed:0xe4/255.0 green:0xe5/255.0 blue:0xe8/255.0 alpha:1]
+
+#define Color_Nolmal_orange [UIColor colorWithRed:255/255.0 green:227/255.0 blue:0/255.0 alpha:1]
+
+#define Color_Nolmal_BGColor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
+
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 blue:((float)(rgbValue & 0x0000FF))/255.0 alpha:alphaValue]//颜色转换（从16位转化为rgb）
+/**
+ *  设置图片
+ */
+#define kImageWithName(__NAME) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:(__NAME)]]
+
+/**
+ *  MBHUDSize
+ */
+#define MBHUDSize CGSizeMake(90., 90.)
+#define kShowProgress(self) [MBProgressHUD showHUDAddedTo:(self.navigationController.view ? self.navigationController.view : self.view)animated:YES];
+
+#define kHiddenProgress(a) [MBProgressHUD hideHUDForView:(a.navigationController.view ? a.navigationController.view : a.view)animated:YES];
+
+//检测block是否可用!
+#define BLOCK_EXIST(block, ...) \
+if (block) {                \
+block(__VA_ARGS__);     \
+};
+
+//使用ARC和不使用ARC
+#if __has_feature(objc_arc)
+//compiling with ARC
+#else
+// compiling without ARC
+#endif
+
+
+#define WEAK(weakSelf) __unsafe_unretained __typeof(&*self) weakSelf = self;
+#define STRONG(strong_weakSelf,weakSelf) __strong typeof(weakSelf) strong_weakSelf = weakSelf;
+
+
+
+#ifdef DEBUG
+
+
+
+
+
+#else
+
+
+
+
+
+#endif
+
+
+
+
+#endif /* AEPublic_h */
+/*
+ WEAK(weakSelf);
+ [self showPopupLoading];
+ [EncapsulationAFBaseNet dictRequestAndTokenPost:[@"findArea" url_ex] params:@{@"areaId" : @"bf1630c6-1cc8-45f5-bf8f-cea0cce38d86"} onCommonBlockCompletion:^(id responseObject, NSError *error) {
+ [self hidePopupLoading];
+ if (error) {
+ return ;
+ }
+ NSDictionary *dict = responseObject;
+ if ([dict[@"responseData"] isKindOfClass:[NSDictionary class]]) {
+ weakSelf.storeInfo = [AreaStoreInfo yy_modelWithDictionary:dict[@"responseData"]];
+ }
+ [weakSelf.constDataDict setObject:@(weakSelf.storeInfo.dispatchPrice) forKey:@"posttagePrice"];
+ NSInteger section = [weakSelf.sectionArray indexOfObject:@"配送费用"];
+ [weakSelf.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:section]] withRowAnimation:UITableViewRowAnimationNone];
+ [self updateTotalPrice];
+ }];
+ */

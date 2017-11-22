@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ggo-Wm-xyA" customClass="EvaluateChooseView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKp-fd-2lh">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务质量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zP-PO-vvM">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6zP-PO-vvM" secondAttribute="trailing" id="Jgu-2F-0Uo"/>
+                        <constraint firstAttribute="bottom" secondItem="6zP-PO-vvM" secondAttribute="bottom" id="XGG-He-Nug"/>
+                        <constraint firstAttribute="width" constant="100" id="bbm-w7-QTE"/>
+                        <constraint firstItem="6zP-PO-vvM" firstAttribute="top" secondItem="PKp-fd-2lh" secondAttribute="top" id="erS-aj-gP3"/>
+                        <constraint firstItem="6zP-PO-vvM" firstAttribute="leading" secondItem="PKp-fd-2lh" secondAttribute="leading" id="p4K-qm-mTb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTH-Kx-5oq">
+                    <rect key="frame" x="100" y="0.0" width="275" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-9F-1I8">
+                            <rect key="frame" x="183.5" y="0.0" width="91.5" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title=" 好评" image="good">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="goodsd">
+                                <color key="titleColor" red="0.99607843137254903" green="0.8901960784313725" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="evaluateButtonClick:" destination="Ggo-Wm-xyA" eventType="touchUpInside" id="k8o-vc-Rv2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1y-f8-zSy">
+                            <rect key="frame" x="0.0" y="0.0" width="91.5" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title=" 差评" image="poor">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="poorsd">
+                                <color key="titleColor" red="1" green="0.83529411764705885" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="evaluateButtonClick:" destination="Ggo-Wm-xyA" eventType="touchUpInside" id="L05-F3-LF9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSP-Vd-GYx">
+                            <rect key="frame" x="91.5" y="0.0" width="92" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title=" 中评" image="middle">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="middlesd">
+                                <color key="titleColor" red="1" green="0.83529411764705885" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="evaluateButtonClick:" destination="Ggo-Wm-xyA" eventType="touchUpInside" id="DFr-xQ-2Qw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="a1y-f8-zSy" firstAttribute="centerY" secondItem="WTH-Kx-5oq" secondAttribute="centerY" id="9xA-11-vdt"/>
+                        <constraint firstItem="ESd-9F-1I8" firstAttribute="height" secondItem="a1y-f8-zSy" secondAttribute="height" id="Bvz-Ry-2gl"/>
+                        <constraint firstItem="MSP-Vd-GYx" firstAttribute="centerY" secondItem="a1y-f8-zSy" secondAttribute="centerY" id="EWF-VJ-mpJ"/>
+                        <constraint firstItem="a1y-f8-zSy" firstAttribute="height" secondItem="WTH-Kx-5oq" secondAttribute="height" id="JLy-y1-bFd"/>
+                        <constraint firstAttribute="trailing" secondItem="ESd-9F-1I8" secondAttribute="trailing" id="P4J-7K-DsY"/>
+                        <constraint firstItem="ESd-9F-1I8" firstAttribute="centerY" secondItem="a1y-f8-zSy" secondAttribute="centerY" id="S31-60-SJC"/>
+                        <constraint firstItem="ESd-9F-1I8" firstAttribute="width" secondItem="a1y-f8-zSy" secondAttribute="width" id="Xyd-sh-zSb"/>
+                        <constraint firstItem="MSP-Vd-GYx" firstAttribute="height" secondItem="a1y-f8-zSy" secondAttribute="height" id="YMR-KD-GpF"/>
+                        <constraint firstItem="ESd-9F-1I8" firstAttribute="leading" secondItem="MSP-Vd-GYx" secondAttribute="trailing" id="gja-4K-5fz"/>
+                        <constraint firstItem="a1y-f8-zSy" firstAttribute="leading" secondItem="WTH-Kx-5oq" secondAttribute="leading" id="iPD-h7-7Pm"/>
+                        <constraint firstItem="MSP-Vd-GYx" firstAttribute="leading" secondItem="a1y-f8-zSy" secondAttribute="trailing" id="p47-ve-uGm"/>
+                        <constraint firstItem="MSP-Vd-GYx" firstAttribute="width" secondItem="a1y-f8-zSy" secondAttribute="width" id="vEl-hQ-OUp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WTH-Kx-5oq" firstAttribute="leading" secondItem="PKp-fd-2lh" secondAttribute="trailing" id="1iy-RY-xcd"/>
+                <constraint firstItem="WTH-Kx-5oq" firstAttribute="top" secondItem="Ggo-Wm-xyA" secondAttribute="top" id="HnY-Sz-w7P"/>
+                <constraint firstAttribute="bottom" secondItem="WTH-Kx-5oq" secondAttribute="bottom" id="LrV-x6-7Xc"/>
+                <constraint firstItem="PKp-fd-2lh" firstAttribute="top" secondItem="Ggo-Wm-xyA" secondAttribute="top" id="OFP-MD-SE6"/>
+                <constraint firstItem="PKp-fd-2lh" firstAttribute="leading" secondItem="Ggo-Wm-xyA" secondAttribute="leading" id="Ye2-f4-dBx"/>
+                <constraint firstAttribute="bottom" secondItem="PKp-fd-2lh" secondAttribute="bottom" id="kcn-eJ-qah"/>
+                <constraint firstAttribute="trailing" secondItem="WTH-Kx-5oq" secondAttribute="trailing" id="owy-qX-3I0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="evaluate1" destination="a1y-f8-zSy" id="eDD-S3-hOf"/>
+                <outlet property="evaluate3" destination="MSP-Vd-GYx" id="T5z-Hi-Vw2"/>
+                <outlet property="evaluate5" destination="ESd-9F-1I8" id="kYl-Ez-EQP"/>
+                <outlet property="titleLabel" destination="6zP-PO-vvM" id="Okc-Ev-OdG"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="369"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="good" width="14" height="16"/>
+        <image name="goodsd" width="14" height="16"/>
+        <image name="middle" width="14" height="15"/>
+        <image name="middlesd" width="14" height="15"/>
+        <image name="poor" width="14" height="15"/>
+        <image name="poorsd" width="14" height="15"/>
+    </resources>
+</document>

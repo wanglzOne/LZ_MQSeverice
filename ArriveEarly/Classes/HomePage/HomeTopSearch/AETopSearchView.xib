@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.69999999999999996" contentMode="scaleToFill" id="qbJ-L7-dzs" customClass="AETopSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-top1" translatesAutoresizingMaskIntoConstraints="NO" id="rAy-tE-ywp">
+                    <rect key="frame" x="10" y="4.5" width="21.5" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rAy-tE-ywp" secondAttribute="height" multiplier="18:22" id="OXc-kJ-wfx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国农业银行(成都)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpC-cF-ZJM">
+                    <rect key="frame" x="36.5" y="0.0" width="189.5" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-top2" translatesAutoresizingMaskIntoConstraints="NO" id="lJI-bP-cal">
+                    <rect key="frame" x="226" y="7.5" width="16" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lJI-bP-cal" secondAttribute="height" multiplier="9:11" id="Oll-iI-411"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-5i-31E">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="35"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lJI-bP-cal" secondAttribute="trailing" constant="8" id="8In-Zs-K1v"/>
+                <constraint firstItem="rAy-tE-ywp" firstAttribute="width" secondItem="qbJ-L7-dzs" secondAttribute="width" multiplier="17:200" id="DIF-AE-bK4"/>
+                <constraint firstItem="aeN-5i-31E" firstAttribute="top" secondItem="qbJ-L7-dzs" secondAttribute="top" id="Dvp-ys-P8o"/>
+                <constraint firstItem="rAy-tE-ywp" firstAttribute="leading" secondItem="qbJ-L7-dzs" secondAttribute="leading" constant="10" id="EBB-am-rpd"/>
+                <constraint firstItem="lJI-bP-cal" firstAttribute="centerY" secondItem="qbJ-L7-dzs" secondAttribute="centerY" id="EZ6-rH-L6R"/>
+                <constraint firstItem="rAy-tE-ywp" firstAttribute="centerY" secondItem="qbJ-L7-dzs" secondAttribute="centerY" id="Eae-Ui-itg"/>
+                <constraint firstAttribute="bottom" secondItem="DpC-cF-ZJM" secondAttribute="bottom" id="Fop-ev-srP"/>
+                <constraint firstItem="DpC-cF-ZJM" firstAttribute="leading" secondItem="rAy-tE-ywp" secondAttribute="trailing" constant="5" id="IUj-xI-Bcp"/>
+                <constraint firstItem="lJI-bP-cal" firstAttribute="leading" secondItem="DpC-cF-ZJM" secondAttribute="trailing" id="c3b-gj-kfr"/>
+                <constraint firstItem="aeN-5i-31E" firstAttribute="leading" secondItem="qbJ-L7-dzs" secondAttribute="leading" id="d6s-sI-MtQ"/>
+                <constraint firstItem="lJI-bP-cal" firstAttribute="width" secondItem="qbJ-L7-dzs" secondAttribute="width" multiplier="13:200" id="eEa-8X-Fde"/>
+                <constraint firstItem="DpC-cF-ZJM" firstAttribute="top" secondItem="qbJ-L7-dzs" secondAttribute="top" id="hlE-AH-xhe"/>
+                <constraint firstAttribute="bottom" secondItem="aeN-5i-31E" secondAttribute="bottom" id="hqz-go-shg"/>
+                <constraint firstAttribute="trailing" secondItem="aeN-5i-31E" secondAttribute="trailing" id="uJ6-2t-HI9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="ClickBtn" destination="aeN-5i-31E" id="cly-q4-XqE"/>
+                <outlet property="locationLabel" destination="DpC-cF-ZJM" id="ei2-hX-Abx"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="-14.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img-top1" width="11" height="13"/>
+        <image name="img-top2" width="6" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AEHomeViewController">
+            <connections>
+                <outlet property="redBackButton" destination="BWa-60-sYj" id="B4F-H1-tXv"/>
+                <outlet property="tableViewDisPlay" destination="4lz-x5-UhX" id="iA8-nm-kl5"/>
+                <outlet property="view" destination="gfu-gh-NDR" id="Lz5-eB-428"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gfu-gh-NDR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKe-c4-d0u">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWa-60-sYj">
+                            <rect key="frame" x="327" y="358.5" width="48" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="4qf-Nn-hLK"/>
+                                <constraint firstAttribute="width" constant="48" id="gep-fI-cm3"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="hongbao"/>
+                            <connections>
+                                <action selector="redPacketAction:" destination="-1" eventType="touchUpInside" id="Pjf-e3-YBc"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4lz-x5-UhX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="tKr-8z-Ndm"/>
+                                <outlet property="delegate" destination="-1" id="jRh-M1-iFC"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4lz-x5-UhX" secondAttribute="trailing" id="8HT-y2-57Q"/>
+                        <constraint firstItem="BWa-60-sYj" firstAttribute="centerY" secondItem="GKe-c4-d0u" secondAttribute="centerY" constant="60" id="Atk-xp-uan"/>
+                        <constraint firstItem="4lz-x5-UhX" firstAttribute="leading" secondItem="GKe-c4-d0u" secondAttribute="leading" id="d3Z-kF-BNl"/>
+                        <constraint firstItem="4lz-x5-UhX" firstAttribute="top" secondItem="GKe-c4-d0u" secondAttribute="top" id="fzo-py-UKP"/>
+                        <constraint firstAttribute="bottom" secondItem="4lz-x5-UhX" secondAttribute="bottom" constant="49" id="iMw-MV-K0A"/>
+                        <constraint firstAttribute="trailing" secondItem="BWa-60-sYj" secondAttribute="trailing" id="uO5-YD-hXr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GKe-c4-d0u" secondAttribute="trailing" id="3ej-rn-45u"/>
+                <constraint firstAttribute="bottom" secondItem="GKe-c4-d0u" secondAttribute="bottom" id="5VO-dV-Xiv"/>
+                <constraint firstItem="GKe-c4-d0u" firstAttribute="leading" secondItem="gfu-gh-NDR" secondAttribute="leading" id="9zt-X8-3ge"/>
+                <constraint firstItem="GKe-c4-d0u" firstAttribute="top" secondItem="gfu-gh-NDR" secondAttribute="top" id="RhV-P7-NAH"/>
+            </constraints>
+            <point key="canvasLocation" x="-24" y="-940"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hongbao" width="50" height="69"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="HistorySearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ss1" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-Jq-FPx">
+                        <rect key="frame" x="16" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2rW-O4-mik"/>
+                            <constraint firstAttribute="width" constant="20" id="doD-XY-UeV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冯记冯师傅方便面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waV-Pa-1MK">
+                        <rect key="frame" x="52" y="9.5" width="252" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fsn-bB-674"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P47-vj-OGt">
+                        <rect key="frame" x="0.0" y="38.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="FJN-jy-Cni"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="waV-Pa-1MK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0Pw-dv-fzm"/>
+                    <constraint firstAttribute="bottom" secondItem="P47-vj-OGt" secondAttribute="bottom" id="1lX-dh-9qE"/>
+                    <constraint firstItem="waV-Pa-1MK" firstAttribute="leading" secondItem="oEb-Jq-FPx" secondAttribute="trailing" constant="16" id="1mQ-Kt-3gQ"/>
+                    <constraint firstAttribute="trailing" secondItem="P47-vj-OGt" secondAttribute="trailing" id="6UX-41-uiK"/>
+                    <constraint firstItem="oEb-Jq-FPx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FYK-rE-dgd"/>
+                    <constraint firstItem="oEb-Jq-FPx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KVV-c8-iBA"/>
+                    <constraint firstAttribute="trailing" secondItem="waV-Pa-1MK" secondAttribute="trailing" constant="16" id="OMS-F8-ddR"/>
+                    <constraint firstItem="P47-vj-OGt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qZ5-of-Qlj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="historyTitle" destination="waV-Pa-1MK" id="Wmx-ON-qmP"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="128"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ss1" width="15" height="15"/>
+    </resources>
+</document>

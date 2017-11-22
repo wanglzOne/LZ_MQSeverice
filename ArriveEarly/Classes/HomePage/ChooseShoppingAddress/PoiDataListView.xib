@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PoiDataListView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-15-pLD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ggM-jS-oJm">
+                            <rect key="frame" x="0.0" y="1" width="375" height="666"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ggM-jS-oJm" secondAttribute="trailing" id="AZJ-Oa-xjv"/>
+                        <constraint firstItem="ggM-jS-oJm" firstAttribute="top" secondItem="bxo-15-pLD" secondAttribute="top" constant="1" id="L2S-Do-D5O"/>
+                        <constraint firstItem="ggM-jS-oJm" firstAttribute="leading" secondItem="bxo-15-pLD" secondAttribute="leading" id="VQz-U8-bNU"/>
+                        <constraint firstAttribute="bottom" secondItem="ggM-jS-oJm" secondAttribute="bottom" id="yxi-ZY-zuJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bxo-15-pLD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IQP-1L-4G3"/>
+                <constraint firstAttribute="trailing" secondItem="bxo-15-pLD" secondAttribute="trailing" id="TEz-r7-Qor"/>
+                <constraint firstAttribute="bottom" secondItem="bxo-15-pLD" secondAttribute="bottom" id="YAo-RF-Ire"/>
+                <constraint firstItem="bxo-15-pLD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="va9-VW-PWP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="bxo-15-pLD" id="f84-it-6ZP"/>
+                <outlet property="tableView" destination="ggM-jS-oJm" id="QdL-Ui-DaX"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

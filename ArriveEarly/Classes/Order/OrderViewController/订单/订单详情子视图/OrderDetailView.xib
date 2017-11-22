@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="674"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-Os-5fi">
+                    <rect key="frame" x="0.0" y="624" width="375" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.83529411760000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iA1-Os-5fi" secondAttribute="height" multiplier="15:2" id="ggq-uq-RPr"/>
+                    </constraints>
+                    <state key="normal" title="再来一单">
+                        <color key="titleColor" red="0.28627450980000002" green="0.16862745100000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="AgainAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="iDR-We-bMn"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="s3p-jI-hZE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="624"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-mx-pbv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.10000000000000001" id="FF3-7V-A54"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iA1-Os-5fi" secondAttribute="trailing" id="1Fs-8V-4zk"/>
+                <constraint firstItem="iA1-Os-5fi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1G4-Bf-szg"/>
+                <constraint firstItem="Dgc-mx-pbv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7xi-rV-DQG"/>
+                <constraint firstItem="s3p-jI-hZE" firstAttribute="top" secondItem="Dgc-mx-pbv" secondAttribute="bottom" id="AvE-BN-loy"/>
+                <constraint firstAttribute="bottom" secondItem="iA1-Os-5fi" secondAttribute="bottom" id="DmF-I3-XaH"/>
+                <constraint firstItem="Dgc-mx-pbv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bIj-op-bOf"/>
+                <constraint firstItem="s3p-jI-hZE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bVx-V9-NOW"/>
+                <constraint firstItem="iA1-Os-5fi" firstAttribute="top" secondItem="s3p-jI-hZE" secondAttribute="bottom" id="o3J-hF-pub"/>
+                <constraint firstAttribute="trailing" secondItem="Dgc-mx-pbv" secondAttribute="trailing" id="ofU-vT-Uew"/>
+                <constraint firstAttribute="trailing" secondItem="s3p-jI-hZE" secondAttribute="trailing" id="wuN-11-IdL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chooseButton" destination="iA1-Os-5fi" id="Jld-yK-wHI"/>
+                <outlet property="tableView" destination="s3p-jI-hZE" id="wfb-jo-hGX"/>
+            </connections>
+            <point key="canvasLocation" x="1.5" y="-153"/>
+        </view>
+    </objects>
+</document>

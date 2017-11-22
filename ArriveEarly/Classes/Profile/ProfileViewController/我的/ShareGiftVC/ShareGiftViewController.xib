@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareGiftViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGY-NP-mUX">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-Pa-KL0">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="57" id="X9h-os-7y8"/>
+                                <constraint firstAttribute="height" constant="55" id="XIO-sz-2pf"/>
+                            </constraints>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="xBq-dN-MAE"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友  各领红包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtJ-9g-04d">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="0m8-A4-PzT"/>
+                                <constraint firstAttribute="height" constant="23" id="Qd3-xE-veN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WtJ-9g-04d" firstAttribute="centerY" secondItem="pGY-NP-mUX" secondAttribute="centerY" id="0Yb-t0-5n5"/>
+                        <constraint firstAttribute="height" constant="64" id="HwD-YN-lUC"/>
+                        <constraint firstItem="WtJ-9g-04d" firstAttribute="centerX" secondItem="pGY-NP-mUX" secondAttribute="centerX" id="QR3-Mf-f9N"/>
+                        <constraint firstItem="aKk-Pa-KL0" firstAttribute="leading" secondItem="pGY-NP-mUX" secondAttribute="leading" id="W25-Bf-lKg"/>
+                        <constraint firstAttribute="bottom" secondItem="aKk-Pa-KL0" secondAttribute="bottom" id="kbs-EP-JgY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzj-Kq-KEJ">
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="FZC-wH-Mta"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kzj-Kq-KEJ" secondAttribute="trailing" id="Dfd-VD-L2g"/>
+                <constraint firstItem="pGY-NP-mUX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QiS-ze-TZM"/>
+                <constraint firstAttribute="trailing" secondItem="pGY-NP-mUX" secondAttribute="trailing" id="aLv-fP-y0z"/>
+                <constraint firstItem="kzj-Kq-KEJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gxR-Xt-yS8"/>
+                <constraint firstItem="pGY-NP-mUX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="snB-wa-aEl"/>
+                <constraint firstItem="kzj-Kq-KEJ" firstAttribute="top" secondItem="pGY-NP-mUX" secondAttribute="bottom" id="wVS-m7-eXA"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

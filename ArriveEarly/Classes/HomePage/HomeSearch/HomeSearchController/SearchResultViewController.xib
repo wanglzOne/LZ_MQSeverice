@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchResultViewController">
+            <connections>
+                <outlet property="searchBtn" destination="YlT-Zs-Rgx" id="PeU-1q-xER"/>
+                <outlet property="searchTF" destination="kyL-uD-Gqe" id="gus-lI-Bqh"/>
+                <outlet property="tableView" destination="AO7-PZ-pZU" id="umX-wv-p0K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIN-WH-GRN">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTa-qY-3zt">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="M4U-Ic-yCD"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="IAe-mL-sgq"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-lX-OeO">
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   请输入菜品名称" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="kyL-uD-Gqe">
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlT-Zs-Rgx">
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="m5z-nG-iIG"/>
+                                    </constraints>
+                                    <state key="normal" image="ss2"/>
+                                    <connections>
+                                        <action selector="searchBtnAction:" destination="-1" eventType="touchUpInside" id="0iq-lp-stx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="YlT-Zs-Rgx" secondAttribute="bottom" id="KNR-He-0PO"/>
+                                <constraint firstAttribute="height" constant="30" id="Neg-vn-vhm"/>
+                                <constraint firstAttribute="trailing" secondItem="YlT-Zs-Rgx" secondAttribute="trailing" id="OK1-TO-mTf"/>
+                                <constraint firstAttribute="bottom" secondItem="kyL-uD-Gqe" secondAttribute="bottom" id="e6j-2e-y3I"/>
+                                <constraint firstItem="YlT-Zs-Rgx" firstAttribute="top" secondItem="BUf-lX-OeO" secondAttribute="top" id="lVR-Rp-bZj"/>
+                                <constraint firstItem="kyL-uD-Gqe" firstAttribute="top" secondItem="BUf-lX-OeO" secondAttribute="top" id="nUC-dG-hWN"/>
+                                <constraint firstItem="kyL-uD-Gqe" firstAttribute="leading" secondItem="BUf-lX-OeO" secondAttribute="leading" id="o5e-vU-UfJ"/>
+                                <constraint firstItem="YlT-Zs-Rgx" firstAttribute="leading" secondItem="kyL-uD-Gqe" secondAttribute="trailing" id="w74-VR-s4U"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zTa-qY-3zt" firstAttribute="leading" secondItem="dIN-WH-GRN" secondAttribute="leading" id="CQH-Ih-I0x"/>
+                        <constraint firstAttribute="trailing" secondItem="BUf-lX-OeO" secondAttribute="trailing" constant="15" id="Pl3-vR-0tj"/>
+                        <constraint firstAttribute="bottom" secondItem="zTa-qY-3zt" secondAttribute="bottom" id="ddP-Qy-pPp"/>
+                        <constraint firstItem="BUf-lX-OeO" firstAttribute="leading" secondItem="zTa-qY-3zt" secondAttribute="trailing" id="ehV-gh-hkr"/>
+                        <constraint firstAttribute="bottom" secondItem="BUf-lX-OeO" secondAttribute="bottom" constant="8" id="nus-4m-MKW"/>
+                        <constraint firstAttribute="height" constant="64" id="psM-Wo-0Nh"/>
+                        <constraint firstItem="zTa-qY-3zt" firstAttribute="top" secondItem="dIN-WH-GRN" secondAttribute="top" id="ymi-C8-vpZ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AO7-PZ-pZU">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dIN-WH-GRN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8pw-UG-Zmn"/>
+                <constraint firstAttribute="bottom" secondItem="AO7-PZ-pZU" secondAttribute="bottom" id="Dba-zX-i2d"/>
+                <constraint firstItem="AO7-PZ-pZU" firstAttribute="top" secondItem="dIN-WH-GRN" secondAttribute="bottom" constant="1" id="XRf-zV-hQf"/>
+                <constraint firstItem="AO7-PZ-pZU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eBv-Ps-m6C"/>
+                <constraint firstAttribute="trailing" secondItem="dIN-WH-GRN" secondAttribute="trailing" id="mGi-vj-hwT"/>
+                <constraint firstItem="dIN-WH-GRN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uq8-B1-Ppz"/>
+                <constraint firstAttribute="trailing" secondItem="AO7-PZ-pZU" secondAttribute="trailing" id="xa6-nQ-hj3"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="8" height="14"/>
+        <image name="ss2" width="15" height="15"/>
+    </resources>
+</document>

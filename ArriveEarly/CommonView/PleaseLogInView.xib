@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PleaseLogInView">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="269"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有登录，请登录后查看订单" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FcA-rO-iFR">
+                    <rect key="frame" x="32.5" y="125.5" width="230" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCd-b9-Efb">
+                    <rect key="frame" x="96.5" y="151.5" width="102" height="30"/>
+                    <color key="backgroundColor" red="0.99786847829818726" green="0.88931798934936523" blue="0.20284116268157959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="102" id="PyB-lv-lrZ"/>
+                    </constraints>
+                    <state key="normal" title="登录/注册">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="BTi-ia-Ajq"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metx" translatesAutoresizingMaskIntoConstraints="NO" id="VZG-7L-Pgc">
+                    <rect key="frame" x="97.5" y="17.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5wn-Lf-Tpf"/>
+                        <constraint firstAttribute="height" constant="100" id="RWh-ir-FDy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VZG-7L-Pgc" firstAttribute="centerX" secondItem="FcA-rO-iFR" secondAttribute="centerX" id="Eif-8M-nb1"/>
+                <constraint firstItem="FcA-rO-iFR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZAV-sX-FEy"/>
+                <constraint firstItem="FcA-rO-iFR" firstAttribute="top" secondItem="VZG-7L-Pgc" secondAttribute="bottom" constant="8" id="alR-FJ-JeN"/>
+                <constraint firstItem="QCd-b9-Efb" firstAttribute="centerX" secondItem="FcA-rO-iFR" secondAttribute="centerX" id="h2F-vJ-Kbb"/>
+                <constraint firstItem="FcA-rO-iFR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jCS-el-sGM"/>
+                <constraint firstItem="QCd-b9-Efb" firstAttribute="top" secondItem="FcA-rO-iFR" secondAttribute="bottom" constant="8" id="mxf-uQ-SPg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageLbael" destination="FcA-rO-iFR" id="Wsm-rp-TFb"/>
+            </connections>
+            <point key="canvasLocation" x="-24.5" y="-152.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="metx" width="51" height="51"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="OrderStateFinishTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orderFinish" translatesAutoresizingMaskIntoConstraints="NO" id="Tvh-nA-0fa">
+                        <rect key="frame" x="16.5" y="77" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Sfq-qb-Dno"/>
+                            <constraint firstAttribute="width" constant="20" id="ghR-xo-XgC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="644-f3-1ed">
+                        <rect key="frame" x="42" y="77" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.83529411760000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verticalline" translatesAutoresizingMaskIntoConstraints="NO" id="68O-d3-mnw">
+                        <rect key="frame" x="26" y="0.0" width="1" height="77"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="CTM-W0-w9n"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tvh-nA-0fa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7aU-Gz-RHw"/>
+                    <constraint firstItem="Tvh-nA-0fa" firstAttribute="centerX" secondItem="68O-d3-mnw" secondAttribute="centerX" id="Kcq-Be-ZfS"/>
+                    <constraint firstItem="644-f3-1ed" firstAttribute="leading" secondItem="Tvh-nA-0fa" secondAttribute="trailing" constant="5.5" id="QEP-Np-enR"/>
+                    <constraint firstItem="68O-d3-mnw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="QG8-6W-2X1"/>
+                    <constraint firstItem="Tvh-nA-0fa" firstAttribute="top" secondItem="68O-d3-mnw" secondAttribute="bottom" id="cBq-JZ-lRu"/>
+                    <constraint firstItem="68O-d3-mnw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dF2-qI-0bo"/>
+                    <constraint firstItem="644-f3-1ed" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pbD-3X-vpP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="47.5" y="117"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="orderFinish" width="28" height="28"/>
+        <image name="verticalline" width="1" height="55"/>
+    </resources>
+</document>
